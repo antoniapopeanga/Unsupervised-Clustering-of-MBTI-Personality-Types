@@ -49,9 +49,7 @@ Clustering quality is assessed using three complementary metrics:
 
 These are combined into a single score:
 
-\[
-\text{Combined Score} = 0.4 \cdot \text{Purity} + 0.4 \cdot \text{ARI} + 0.2 \cdot \text{Silhouette}
-\]
+**Combined Score** = 0.4 × Purity + 0.4 × ARI + 0.2 × Silhouette
 
 This weighting balances label alignment, chance correction, and geometric separation.
 
@@ -73,7 +71,7 @@ Observations:
 - K-Medoids produces clusters more aligned with personality labels
 - Unsupervised performance approaches supervised baselines (≈79% accuracy)
 
-  <img src="figures/performance_comparison.png" width="400">
+  <img src="figures/performance_comparison.png" width="600">
 
 ---
 
@@ -93,6 +91,8 @@ Despite the inherent ambiguity of inferring personality from text, the discovere
    <img src="figures/kmedoids_clustering.png" width="400">
 
 Misclustered samples often display mixed stylistic traits, suggesting that personality expression in text lies on a continuum rather than forming strictly separable categories.
- <img src="figures/feature_differences.png" width="400">
+
+
+ <img src="figures/feature_ differences.png" width="1000">
 
 ---
