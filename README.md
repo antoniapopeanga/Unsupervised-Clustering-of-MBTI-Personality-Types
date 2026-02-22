@@ -67,10 +67,13 @@ This weighting balances label alignment, chance correction, and geometric separa
 | Affinity Propagation | TF-IDF + SVD (5) | 0.73 | 0.18 |
 | Random Baseline | — | 0.52 | 0.00 |
 
-Key observations:
+
+Observations:
 - TF-IDF features consistently outperform handcrafted features
 - K-Medoids produces clusters more aligned with personality labels
 - Unsupervised performance approaches supervised baselines (≈79% accuracy)
+
+  <img src="figures/performance_comparison.png" width="400">
 
 ---
 
@@ -86,7 +89,10 @@ Despite the inherent ambiguity of inferring personality from text, the discovere
 - **ENFP-dominant cluster**
   - Increased use of exclamation marks and expressive punctuation
   - Informal and socially oriented vocabulary
+ 
+   <img src="figures/kmedoids_clustering.png" width="400">
 
 Misclustered samples often display mixed stylistic traits, suggesting that personality expression in text lies on a continuum rather than forming strictly separable categories.
+ <img src="figures/feature_differences.png" width="400">
 
 ---
